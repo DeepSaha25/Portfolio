@@ -1,3 +1,22 @@
-.purple{
-    color: purple;
+.purple {
+  color: purple;
+}
+.text-grey {
+  color: grey;
+}
+.vertical-title {
+  position: relative;
+  top: 46px;
+      left: -48px;
+  width: 150px;
+  font-size: 20px;
+}
+.vertical-desc {
+    position: relative;
+    top: 62px;
+        left: -52px;
+
+    color: grey;
+    width: 150px;
+    font-size: 11px;
 }

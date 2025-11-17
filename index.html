@@ -1,53 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deep-Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-</head>
-<body>
- <header>
-    <nav>
-        <div class="left">
-            Deep's Portfolio
-        </div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Deep's Portfolio</div>
         <div class="right">
-            <ul>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
-            </ul>
+          <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
         </div>
-    </nav>
- </header>
- <main>
-    <section class="firstSection">
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
         <div class="leftSection">
-            Hi, My name is <span class="purple">Deep Saha</span>
-            <div>I am a passionate</div>
-            <span id="element"></span>
-             
+          Hi, My name is <span class="purple">Deep Saha</span>
+          <div>I am a passionate</div>
+          <span id="element"></span>
         </div>
         <div class="rightSection">
-            <img src="bg.png" alt="">
+          <img src="pro.png" alt="" />
         </div>
-    </section>
-    <section class="secondSection">
-        Experience
-    </section>
- </main>
-
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-grey">What I have done so far</span>
+        <h1>Experience</h1>
+        <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="html.png" alt="">
+          <div class="vertical-title">
+            Learned HTML
+            <p>(June 2025)</p>
+          </div>
+          <div class="vertical-desc">
+            Started learning Html css from youtube and builing logics and understanding core concepts and structures.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="css.png" alt="">
+          <div class="vertical-title">
+            Learned CSS
+            <p>(July 2025)</p>
+          </div>
+          <div class="vertical-desc">
+            Started learning  CSS from youtube and builing logics and understanding core concepts and structures.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="js.png" alt="">
+          <div class="vertical-title">
+            Learned Javascropt basics
+            <p>(August 2025)</p>
+          </div>
+          <div class="vertical-desc">
+            Started learning Js basics from youtube and builing logics and understanding core concepts and structures.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="hack.png" alt="">
+          <div class="vertical-title">
+            First Hackathon - CodeSprint 2.0
+            <p>(Sept 2025)</p>
+          </div>
+          <div class="vertical-desc">
+            Participated in my first hackathon with less than 1 month in college and succesfully qualified.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="hackoct.png" alt="">
+          <div class="vertical-title">
+            Hacktoberfest Supercontributor
+            <p>(Oct 2025)</p>
+          </div>
+          <div class="vertical-desc">
+           Participated in Hactoberfest and succesfully dwelved into world of open source contribution and succesfull PR merges and got the supercontributor badge.
+          </div>
+        </div>
+        
+      </section>
+    </main>
+    <hr>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h4>Made with ♥ || Deep Saha || Copyright ©
+ Deep Saha </h4>
+        </div>
+    
+      </div>
+    </footer>
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Student','Speaker'],
-      typeSpeed: 100,
-    });
-  </script>
-</body>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Student", "Speaker", "Tech Enthusiast"],
+        typeSpeed: 100,
+      });
+    </script>
+  </body>
 </html>
