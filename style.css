@@ -70,7 +70,7 @@ nav ul a:hover {
 .secondSection {
   max-width: 80vw;
   margin: auto;
-  height: 80vh;
+  height: 60vh;
 }
 hr {
   border: 0px;
@@ -115,4 +115,18 @@ footer {
 
 .footer-first h4 {
   margin: 0;
+}
+.aboutSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 40vh;
+}
+.aboutSection h3{
+         width: 100%;
+    margin: 8px 0;
+    font-size: larger;
+}
+.aboutSection p{
+        width: 40vw;
+    font-size: large;
 }
