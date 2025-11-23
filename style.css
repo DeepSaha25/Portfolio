@@ -34,6 +34,12 @@ nav ul a:hover {
   font-size: 1.04rem;
   color: lavender;
 }
+nav ul a.active-link {
+  font-weight: 600;
+  color: purple; 
+  font-size: 1.05rem;
+  border-bottom: 2px solid purple;
+}
 .left {
   font-size: 1.5rem;
 }
@@ -120,17 +126,32 @@ footer {
 .aboutSection {
   max-width: 80vw;
   margin: auto;
-  height: 60vh;
+  height: 35vh; 
+  padding: 50px 0; 
 }
-.aboutSection h3{
-         width: 100%;
-    margin: 8px 0;
-    font-size: larger;
+.aboutSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
-.aboutSection p{
-        width: 40vw;
-    font-size: large;
+.aboutSection h3 {
+  width: 70%; 
+  margin: 15px 0 25px 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #a7a7a7; 
+  line-height: 1.6;
 }
+
+
+.aboutSection p {
+  width: 60vw;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  border-left: 3px solid purple;
+  padding-left: 15px;
+  color: #e0e0e0;
+}
+
 #tsparticles {
   position: fixed;
   top: 0;
@@ -172,4 +193,98 @@ footer {
   height: 100%;
   object-fit: cover; 
   border-radius: 5px;
+}
+
+
+.contactSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 30vh;
+  padding: 50px 0; 
+}
+
+.contactSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+
+.contactSection ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contactSection li {
+  font-size: 1.2rem;
+
+  padding: 5px 0;
+  border-bottom: 1px dashed #360b36; 
+  display: flex; 
+  align-items: center;
+}
+
+.contactSection li:last-child {
+    border-bottom: none;
+}
+
+.contactSection li a {
+  color: lavender; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.contactSection li a:hover {
+  color: purple; 
+  text-decoration: underline;
+}
+.serviceSection{
+  max-width: 80vw;
+  margin: auto;
+  min-height: 30vh;
+  padding: 50px 0; 
+}
+.serviceSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 30vh;
+  padding: 50px 0;
+}
+
+.serviceSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.serviceSection ul {
+  list-style: none; 
+  padding: 0;
+  margin-top: 20px;
+}
+
+.serviceSection li {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 25px; 
+  border-bottom: 1px solid rgba(128, 0, 128, 0.2); 
+  transition: color 0.3s ease;
+}
+.serviceSection li::before {
+  content: '\2022'; 
+  color: purple; 
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.serviceSection li:hover {
+    color: lavender; 
 }

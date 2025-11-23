@@ -63,3 +63,44 @@ var typed = new Typed("#element", {
   strings: ["Web Developer", "Student", "Speaker", "Tech Enthusiast"],
   typeSpeed: 100,
 });
+
+
+
+const navLinks = [
+  { id: "about", link: document.querySelector('nav ul li a[href="#about"]') },
+  { id: "experience", link: document.querySelector('nav ul li a[href="#experience"]') },
+  { id: "projects", link: document.querySelector('nav ul li a[href="#projects"]') },
+  { id: "services", link: document.querySelector('nav ul li a[href="#services"]') },
+  { id: "contact", link: document.querySelector('nav ul li a[href="#contact"]') }
+];
+
+
+navLinks.forEach(item => {
+  const section = document.getElementById(item.id);
+  if (section && item.link) {
+    gsap.to(item.link, {
+      scrollTrigger: {
+        trigger: section,
+        
+        start: "top center", 
+        end: "bottom center", 
+      
+        toggleClass: { targets: item.link, className: "active-link" },
+      }
+    });
+  }
+});
+
+
+document.querySelectorAll('nav ul li a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        
+        if (this.hash) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            document.querySelector(targetId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
